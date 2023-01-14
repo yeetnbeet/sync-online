@@ -42,6 +42,11 @@ def upload_file():
             create_output(path1,path2)
             return redirect(url_for('download_file', name="OUTPUT.csv"))
     return render_template("index.html")
+
 @app.route('/uploads/<name>')
 def download_file(name):
     return send_from_directory(app.config["UPLOAD_FOLDER"], name)
+
+if __name__ == "__main__":
+    port = int(os.environ.get('PORT', 8000))
+    app.run(debug=True, host='0.0.0.0', port=port)
