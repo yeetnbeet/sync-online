@@ -3,7 +3,7 @@ from flask import Flask, flash, request, redirect, url_for, render_template, sen
 from werkzeug.utils import secure_filename
 from helpers import create_output
 
-UPLOAD_FOLDER = './files'
+UPLOAD_FOLDER = './'
 ALLOWED_EXTENSIONS = {'csv'}
 
 

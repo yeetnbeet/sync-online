@@ -2,7 +2,7 @@ import csv ;
 
 #config is the object that contains file locations and data for manipulations
 class config :
-    def __init__(self, builderFile = "./BUILDER.csv",framesFile = "./FRAMES.csv",outputFile = "./files/OUTPUT.csv"):
+    def __init__(self, builderFile = "./BUILDER.csv",framesFile = "./FRAMES.csv",outputFile = "./OUTPUT.csv"):
         self.builderFile = builderFile
         self.framesFile = framesFile
         self.outputFile = outputFile
